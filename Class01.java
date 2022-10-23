@@ -5,7 +5,7 @@ class Caaa {
 	public int num2;
 }
 
-class Cbbb extends Caaa {
+class Cbbb extends Caaa { //子類別Cbbb
 	public void set_num(int num1, int num2) {
 		System.out.println("Num1:" + num1);
 		System.out.println("Num2:" + num2);
