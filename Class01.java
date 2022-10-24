@@ -7,12 +7,11 @@ class Caaa {
 
 class Cbbb extends Caaa { //子類別Cbbb
 	public void set_num(int num1, int num2) {
-		System.out.println("Num1:" + num1);
-		System.out.println("Num2:" + num2);
 	}
 
 	public void show() {
-
+              System.out.println("num1=" + num1);
+              System.out.println("num2=" + num2);
 	}
 }
 
