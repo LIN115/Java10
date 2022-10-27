@@ -1,35 +1,33 @@
-
+package Java10
 class CTriangle {
 	protected int base;
 	protected int height;
 
+	public CTriangle(int b, int h) {
+		base = b;
+		height = h;
+	}
+
 	protected void show() {
-		System.out.println("base=" + base + ",height=" + height);
+		System.out.println("base=" + base + ", height=" + height);
 	}
 }
 
-class CDate extends CTriangle { // (a)
-
-	private double value;
-
-	public CDate(int a, int b) {
-		base = a;
-		height = b;
-		value = base * height / 2;
+class CData extends CTriangle {
+	public CData(int b, int h) {
+		super(b, h);
 	}
 
 	public void area() {
-		System.out.println("base=" + base + ", height=" + height);
-		System.out.println("area=" + value);
+		show();
+		System.out.println("area=" + base * height / 2.0);
+
 	}
 }
 
 public class Class06 {
-
-	public static void main(String[] args) {
-		CDate obj = new CDate(3, 8);
+	public static void main(String args[]) {
+		CData obj = new CData(3, 8);
 		obj.area();
-
 	}
-
 }
