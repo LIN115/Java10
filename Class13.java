@@ -1,3 +1,4 @@
+package Java10;
 interface Show_ans {
 	public void show();
 }
