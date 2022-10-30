@@ -1,3 +1,4 @@
+package Java10;
 class CRectangle {
 	protected int length;
 	protected int width;
