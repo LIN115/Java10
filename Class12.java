@@ -1,19 +1,20 @@
+package Java10
 interface Data {
-	public void best();// §PÂ_¨º¤@¬ì¦¨ÁZ¸û°ª
+	public void best();// åˆ¤æ–·é‚£ä¸€ç§‘æˆç¸¾è¼ƒé«˜
 
-	public void failed();// §PÂ_¨º¤@¬ì¦¨ÁZ§C©ó 60 ¤À
+	public void failed();// åˆ¤æ–·é‚£ä¸€ç§‘æˆç¸¾ä½æ–¼ 60 åˆ†
 }
 
 interface Test extends Data {
-	public void showData();// Åã¥Ü¾Ç¥Íªº¸ê®Æ¤Î¥­§¡¦¨ÁZ
+	public void showData();// é¡¯ç¤ºå­¸ç”Ÿçš„è³‡æ–™åŠå¹³å‡æˆç¸¾
 
-	public double average();// ­pºâ¼Æ¾Ç©M­^¤åªº¥­§¡¦¨ÁZ
+	public double average();// è¨ˆç®—æ•¸å­¸å’Œè‹±æ–‡çš„å¹³å‡æˆç¸¾
 }
 
 class CStu implements Test {
-	protected String name;// ©m¦W
-	protected int math;// ¼Æ¾Ç¦¨ÁZ
-	protected int english;// ­^¤å¦¨ÁZ
+	protected String name;// å§“å
+	protected int math;// æ•¸å­¸æˆç¸¾
+	protected int english;// è‹±æ–‡æˆç¸¾
 
 	public CStu(String n, int m, int eng) {
 		name = n;
@@ -30,29 +31,29 @@ class CStu implements Test {
 	public void best() {
 		// TODO Auto-generated method stub
 		if (math > english)
-			System.out.println(name + "ªº¼Æ¾Ç¤ñ­^¤å¦n");
+			System.out.println(name + "çš„æ•¸å­¸æ¯”è‹±æ–‡å¥½");
 		else if (english > math)
-			System.out.println(name + "ªº­^¤å¤ñ¾Ç¦n");
+			System.out.println(name + "çš„è‹±æ–‡æ¯”å­¸å¥½");
 		else
-			System.out.println(name + "ªº¼Æ¾Ç©M­^¤å¤@¼Ë¦n");
+			System.out.println(name + "çš„æ•¸å­¸å’Œè‹±æ–‡ä¸€æ¨£å¥½");
 	}
 
 	public void failed() {
 		// TODO Auto-generated method stub
 		if (math < 60)
-			System.out.println(name + "ªº¼Æ¾Ç³Q·í±¼¤F");
+			System.out.println(name + "çš„æ•¸å­¸è¢«ç•¶æ‰äº†");
 		if (english < 60)
-			System.out.println(name + "ªº­^¤å³Q·í±¼¤F");
+			System.out.println(name + "çš„è‹±æ–‡è¢«ç•¶æ‰äº†");
 		if (math >= 60 && english >= 60)
-			System.out.println(name + "ªº¼Æ¾Ç©M­^¤å³£¤Î®æ");
+			System.out.println(name + "çš„æ•¸å­¸å’Œè‹±æ–‡éƒ½åŠæ ¼");
 	}
 
 	public void showData() {
 		// TODO Auto-generated method stub
-		System.out.println("©m¦W:" + name);
-		System.out.println("¼Æ¾Ç¦¨ÁZ:" + math);
-		System.out.println("­^¤å¦¨ÁZ:" + english);
-		System.out.println("¥­§¡¦¨ÁZ:" + average());
+		System.out.println("å§“å:" + name);
+		System.out.println("æ•¸å­¸æˆç¸¾:" + math);
+		System.out.println("è‹±æ–‡æˆç¸¾:" + english);
+		System.out.println("å¹³å‡æˆç¸¾:" + average());
 
 	}
 
