@@ -1,4 +1,5 @@
-package Java10
+package Java10;
+
 interface Data {
 	public void best();// 判斷那一科成績較高
 
