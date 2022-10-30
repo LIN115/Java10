@@ -1,3 +1,5 @@
+package Java10;
+
 class Car {
 	protected String owner;
 	protected String id;
@@ -8,8 +10,8 @@ class Car {
 	}
 
 	final void show() {
-		System.out.println("¨®¥D©m¦W:" + owner);
-		System.out.println("¨®µP¸¹½X:" + id);
+		System.out.println("è»Šä¸»å§“å:" + owner);
+		System.out.println("è»Šç‰Œè™Ÿç¢¼:" + id);
 	}
 }
 
@@ -28,7 +30,7 @@ public class Class17 {
 		// TODO Auto-generated method stub
 		CColor mycar = new CColor("Riaan", "A1-2345", "Black");
 		mycar.show();
-		System.out.println("¨®¨­ÃC¦â:" + mycar.color);
+		System.out.println("è»Šèº«é¡è‰²:" + mycar.color);
 	}
 
 }
